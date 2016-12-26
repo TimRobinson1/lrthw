@@ -4,7 +4,7 @@ def print_two(*args)
   puts "arg1: #{arg1}, arg2: #{arg2}"
 end
 
-# Okay, that *args is actually pointless, we can just do this
+# Okay that *args is actually pointless, we can just do this
 def print_two_again(arg1, arg2)
   puts "arg1: #{arg1}, arg2: #{arg2}"
 end
