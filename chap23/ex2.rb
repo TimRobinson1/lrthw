@@ -1,13 +1,16 @@
-#let Bundler handle all requires
+# This file is for github.com/benben/simple-ruby-facebook-example/blob/master/lib/simple-ruby-facebook-example.rb
+
+# This command require has not been seen so far.  It appears to run files.
 require 'bundler'
 Bundler.require(:default)
 
-# register your app at facebook to get those infos
-# your app id
+# Assigning variables.
 APP_ID     = 1234567890
-# your app secret
+# Assigning variables.
 APP_SECRET = '76dhf8656a75...'
 
+# Not yet encountered 'class' function.  From looking it up, it seems to be used to combine a group of objects into a class for having the same characteristics, a class is a combination of characteristics and functions.
+# For example, your bicycle is an instance of the class of objects known as bicycles.
 class SimpleRubyFacebookExample < Sinatra::Application
 
   use Rack::Session::Cookie, secret: 'PUT_A_GOOD_SECRET_IN_HERE'
