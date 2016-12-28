@@ -1,7 +1,7 @@
 puts "Let's practice everything."
 puts 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
 
-# the <<END is a "heredoc".
+# the <<END is a "heredoc".  This lets Ruby read everything between what was stated first, in this case "END" and when it appears a second time.  This can be any word placed after the '<<'
 poem = <<END
 \tThe Lovely world
 with logic so firmly planted
@@ -35,4 +35,5 @@ puts "We'd have #{beans} beans, #{jars} jars, and #{crates} crates."
 
 start_point = start_point / 10
 puts "We can also do that this way!"
+# This is a method of inserting information that we haven't seen yet.
 puts "We'd have %s beans, %d jars, and %d crates." % secret_formula(start_point)
