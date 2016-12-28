@@ -1,0 +1,85 @@
+true && true
+  Ans = true
+
+false && true
+  Ans = false
+
+1 == 1 && 2 == 1
+  true && false
+    Ans = false
+
+"test" == "test"
+  Ans = true
+
+1 == 1 || 2 != 1
+  true || true
+    Ans = true
+
+true && 1 == 1
+  true && true
+    Ans = true
+
+false && 0 != 0
+  false & false
+    Ans = false
+
+true || 1 == 1
+  true || true
+    Ans = true
+
+"test" == "testing"
+  Ans = false
+
+1 != 0 && 2 == 1
+  true && false
+    Ans = false
+
+"test" != "testing"
+  Ans = true
+
+"test" == 1
+  Ans = false
+
+!(true && false)
+  !(false)
+    Ans = true
+
+!(1 == 1 && 0 != 1)
+  !(true && true)
+    Ans = false
+
+!(10 == 1 || 1000 == 1000)
+  !(false || true)
+    !(true)
+      Ans = false
+
+!(1 != 10 || 3 == 4)
+  !(true || false)
+    !(true)
+      Ans = false
+
+!("testing" == "testing" && "Zed" == "Cool Guy")
+  !(true && false)
+    !(false)
+      Ans = true
+
+1 == 1 && (!("testing" == 1 || 1 == 0))
+  true && (!("testing" == 1 || 1 == 0))
+    true && (!(false || false))
+      true && !(false)
+        true && true
+          Ans = true
+
+"chunky" == "bacon" && (!(3 == 4 || 3 == 3))
+  false && (!(3 == 4 || 3 == 3))
+    false && !(false || true)
+      false && !(true)
+        false && false
+          Ans = false
+
+3 == 3 && (!("testing" == "testing" || "Ruby" == "Fun"))
+  true && (!("testing" == "testing" || "Ruby" == "Fun"))
+    true && !(true || false)
+      true && !(true)
+        true && false
+          Ans = false
