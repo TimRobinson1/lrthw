@@ -1,5 +1,3 @@
-# This is a very good program for studying this kind of Ruby syntax and thinking.
-
 require 'open-uri'
 
 WORD_URL = "http://learncodethehardway.org/words.txt"
