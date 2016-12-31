@@ -74,7 +74,7 @@ class CentralCorridor < Scene
       puts "In the middle of your artful dodge your foot slips and you"
       puts "bang your head on the metal wall and pass out."
       puts "You wake up shortly after only to die as the Gothon stomps on"
-      puts "your head and eats you.
+      puts "your head and eats you."
       return 'death'
 
     elsif action == "tell a joke"
@@ -214,12 +214,14 @@ end
 
 class Map
   @@scenes = {
+    
     'central_corridor' => CentralCorridor.new(),
     'laser_weapon_armory' => LaserWeaponArmory.new(),
     'the_bridge' => TheBridge.new(),
     'escape_pod' => EscapePod.new(),
     'death' => Death.new(),
     'finished' => Finished.new(),
+
   }
 
 
@@ -229,7 +231,7 @@ class Map
 
 
   def next_scene(scene_name)
-    val = @scenes[scene_name]
+    val = @@scenes[scene_name]
     return val
   end
 
