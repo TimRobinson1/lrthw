@@ -14,12 +14,11 @@ class TestGame < Test::Unit::TestCase
     def test_room_paths()
         center = Room.new("Center", "Test room in the center.")
         north = Room.new("North", "Test room in the north.")
-        south = Room.new("South", "Test room in the south.")
+        south = Room.new()
 
         center.add_paths({'north'=> north, 'south'=> south})
         assert_equal(north, center.go('north'))
         assert_equal(south, center.go('south'))
-
     end
 
     def test_map()
